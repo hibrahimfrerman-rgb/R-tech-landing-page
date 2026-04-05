@@ -1,7 +1,7 @@
 ﻿const config = {
   // Replace with the seller WhatsApp number in international format, no +, no spaces.
   // Example (Kenya): 254712345678
-  whatsappPhone: "254718648736",
+  whatsappPhone: "254746343234",
   defaultMessage: "Hi! I'd like a quote. Please share details.",
 };
 
