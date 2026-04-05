@@ -1,9 +1,17 @@
 [build]
   publish = "."
 
-# Optional: set long-lived caching for static assets (Netlify defaults are fine).
 [[headers]]
-  for = "/assets/*"
+  for = "/assets/images/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+[[headers]]
+  for = "/assets/icons/favicon.*"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/assets/icons/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
